@@ -10,7 +10,7 @@ import timber.log.Timber
 import javax.inject.Singleton
 
 @Module
-class ApplicationModule(private val app: KotlinBoilerplateApp) {
+class ApplicationModule(private val app: PasoliniSguardiDiVitaApp) {
 
     @Provides @Singleton
     fun provideApplication(): Application = app

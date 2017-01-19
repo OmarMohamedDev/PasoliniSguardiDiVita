@@ -5,7 +5,7 @@ import dagger.Lazy
 import timber.log.Timber
 import javax.inject.Inject
 
-class KotlinBoilerplateApp : Application() {
+class PasoliniSguardiDiVitaApp : Application() {
 
     @Inject
     lateinit var debugTree: Lazy<Timber.DebugTree>

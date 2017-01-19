@@ -18,7 +18,7 @@ import javax.inject.Singleton
 interface ApplicationComponent {
 
     // Injectors
-    fun injectTo(app: KotlinBoilerplateApp)
+    fun injectTo(app: PasoliniSguardiDiVitaApp)
 
     // Submodule methods
     // Every screen is its own submodule of the graph and must be added here.
