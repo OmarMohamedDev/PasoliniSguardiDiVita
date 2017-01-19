@@ -1,6 +1,8 @@
 # Pasolini, Sguardi di Vita
 
-<div style="text-align:center"><img src ="https://lh6.ggpht.com/n-gQxfQO2JRdfA0asDGDYva9gI0lFd7yJQD00Z0YVJ4CeDi5FprUHJdD3M0ISadax6g=w300" /></div>
+<p align="center">
+	<img src ="https://lh6.ggpht.com/n-gQxfQO2JRdfA0asDGDYva9gI0lFd7yJQD00Z0YVJ4CeDi5FprUHJdD3M0ISadax6g=w300"/>
+</p>
 
 A rewritten version of one of my first projects: "Pasolini: Sguardi di Vita" using a MVVM architecture and [Kotlin](https://kotlinlang.org/). 
 
