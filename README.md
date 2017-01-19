@@ -6,7 +6,7 @@ A rewritten version of one of my first projects: "Pasolini: Sguardi di Vita" usi
 
 The app present content regarding the italian poet **Pier Paolo Pasolini** and the Rome neighbourhood where he mainly lived, guiding the user in a digital and interactive visit of these places.
 
-I used the @Plastix [Android-Boilerplate](https://github.com/Plastix/Kotlin-Android-Boilerplate) as project template.
+I used @Plastix [Android-Boilerplate](https://github.com/Plastix/Kotlin-Android-Boilerplate) as project template.
 
 ## Screenshots
 
