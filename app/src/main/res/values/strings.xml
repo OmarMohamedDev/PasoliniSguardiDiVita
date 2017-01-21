@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Pasolini, Sguardi di Vita</string>
+    <string name="app_name">Pasolini</string>
+    <string name="app_long_name">Pasolini, Sguardi di Vita</string>
 </resources>

@@ -2,18 +2,14 @@ package com.omd.pasolinisdv
 
 import dagger.Component
 import com.omd.pasolinisdv.data.network.NetworkModule
-import com.omd.pasolinisdv.data.remote.ApiModule
-import com.omd.pasolinisdv.ui.detail.DetailComponent
-import com.omd.pasolinisdv.ui.detail.DetailModule
-import com.omd.pasolinisdv.ui.list.ListComponent
-import com.omd.pasolinisdv.ui.list.SectionModule
+import com.omd.pasolinisdv.ui.section.SectionComponent
+import com.omd.pasolinisdv.ui.section.SectionModule
 import javax.inject.Singleton
 
 @Singleton
 @Component(modules = arrayOf(
         ApplicationModule::class,
-        NetworkModule::class,
-        ApiModule::class
+        NetworkModule::class
 ))
 interface ApplicationComponent {
 
@@ -22,6 +18,5 @@ interface ApplicationComponent {
 
     // Submodule methods
     // Every screen is its own submodule of the graph and must be added here.
-    fun plus(module: SectionModule): ListComponent
-    fun plus(module: DetailModule): DetailComponent
+    fun plus(module: SectionModule): SectionComponent
 }

@@ -5,17 +5,16 @@
 
         <variable
             name="viewModel"
-            type="com.omd.pasolinisdv.ui.list.SectionViewModel"/>
+            type="com.omd.pasolinisdv.ui.section.SectionViewModel"/>
     </data>
 
-    <android.support.design.widget.CoordinatorLayout android:id="@+id/listCoordinatorLayout"
-                                                     xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                                      xmlns:app="http://schemas.android.com/apk/res-auto"
                                                      xmlns:tools="http://schemas.android.com/tools"
                                                      android:layout_width="match_parent"
                                                      android:layout_height="match_parent"
                                                      android:fitsSystemWindows="true"
-                                                     tools:context=".ui.list.SectionActivity">
+                                                     tools:context=".ui.section.SectionActivity">
 
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
@@ -23,7 +22,7 @@
             android:theme="@style/AppTheme.AppBarOverlay">
 
             <android.support.v7.widget.Toolbar
-                android:id="@+id/listToolbar"
+                android:id="@+id/detailToolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
@@ -31,22 +30,27 @@
 
         </android.support.design.widget.AppBarLayout>
 
-        <android.support.v4.widget.SwipeRefreshLayout
-            android:id="@+id/listSwipeRefresh"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="32dp"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/listRecyclerView"
+            <TextView
+                android:id="@+id/content"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-        </android.support.v4.widget.SwipeRefreshLayout>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@{viewModel.content}"
+                android:textSize="24sp"/>
 
-        <include
-            android:id="@+id/emptyView"
-            layout="@layout/empty_view"/>
+        </LinearLayout>
 
     </android.support.design.widget.CoordinatorLayout>
-</layout>
 
+</layout>

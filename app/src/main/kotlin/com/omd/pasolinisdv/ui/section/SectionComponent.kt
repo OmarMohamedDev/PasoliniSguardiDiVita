@@ -1,4 +1,4 @@
-package com.omd.pasolinisdv.ui.list
+package com.omd.pasolinisdv.ui.section
 
 import dagger.Subcomponent
 import com.omd.pasolinisdv.ui.ActivityScope
@@ -8,6 +8,5 @@ import com.omd.pasolinisdv.ui.ActivityScope
         SectionModule::class
 ))
 interface SectionComponent {
-
     fun injectTo(activity: SectionActivity)
 }

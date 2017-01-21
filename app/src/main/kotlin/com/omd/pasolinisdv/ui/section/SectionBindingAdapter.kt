@@ -1,4 +1,4 @@
-package com.omd.pasolinisdv.ui.detail
+package com.omd.pasolinisdv.ui.section
 
 import android.databinding.BindingAdapter
 import android.widget.ImageView
