@@ -10,5 +10,5 @@ import com.omd.pasolinisdv.ui.base.ActivityModule
 class DetailModule(activity: AppCompatActivity, val section: Section) : ActivityModule(activity) {
 
     @Provides
-    fun provideRepo(): Section = section
+    fun provideSection(): Section = section
 }

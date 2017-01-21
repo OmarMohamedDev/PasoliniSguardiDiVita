@@ -8,7 +8,7 @@ import dagger.Provides
 import com.omd.pasolinisdv.ui.base.ActivityModule
 
 @Module
-class ListModule(activity: AppCompatActivity) : ActivityModule(activity) {
+class SectionModule(activity: AppCompatActivity) : ActivityModule(activity) {
 
     @Provides
     fun provideLinearLayoutManager(context: Context): LinearLayoutManager = LinearLayoutManager(context)

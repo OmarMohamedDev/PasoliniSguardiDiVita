@@ -20,10 +20,7 @@ import io.reactivex.disposables.CompositeDisposable
 import timber.log.Timber
 import javax.inject.Inject
 
-class ListActivity : ViewModelActivity<ListViewModel, ActivityListBinding>() {
-
-    @Inject
-    lateinit var adapter: RepoAdapter
+class SectionActivity : ViewModelActivity<SectionViewModel, ActivityListBinding>() {
 
     @Inject
     lateinit var layoutManager: LinearLayoutManager
@@ -83,7 +80,7 @@ class ListActivity : ViewModelActivity<ListViewModel, ActivityListBinding>() {
     }
 
     override fun injectDependencies(graph: ApplicationComponent) {
-        graph.plus(ListModule(this))
+        graph.plus(SectionModule(this))
                 .injectTo(this)
     }
 

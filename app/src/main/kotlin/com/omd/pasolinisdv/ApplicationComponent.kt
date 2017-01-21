@@ -6,7 +6,7 @@ import com.omd.pasolinisdv.data.remote.ApiModule
 import com.omd.pasolinisdv.ui.detail.DetailComponent
 import com.omd.pasolinisdv.ui.detail.DetailModule
 import com.omd.pasolinisdv.ui.list.ListComponent
-import com.omd.pasolinisdv.ui.list.ListModule
+import com.omd.pasolinisdv.ui.list.SectionModule
 import javax.inject.Singleton
 
 @Singleton
@@ -22,6 +22,6 @@ interface ApplicationComponent {
 
     // Submodule methods
     // Every screen is its own submodule of the graph and must be added here.
-    fun plus(module: ListModule): ListComponent
+    fun plus(module: SectionModule): ListComponent
     fun plus(module: DetailModule): DetailComponent
 }

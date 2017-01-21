@@ -5,9 +5,9 @@ import com.omd.pasolinisdv.ui.ActivityScope
 
 @ActivityScope
 @Subcomponent(modules = arrayOf(
-        ListModule::class
+        SectionModule::class
 ))
-interface ListComponent {
+interface SectionComponent {
 
-    fun injectTo(activity: ListActivity)
+    fun injectTo(activity: SectionActivity)
 }

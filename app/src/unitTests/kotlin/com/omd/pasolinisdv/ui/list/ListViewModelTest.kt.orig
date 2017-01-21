@@ -1,9 +1,15 @@
 package com.omd.pasolinisdv.ui.list
 
 import com.omd.pasolinisdv.data.network.NetworkInteractor
+<<<<<<< HEAD
 import com.omd.pasolinisdv.data.model.Owner
 import com.omd.pasolinisdv.data.model.Repo
 import com.omd.pasolinisdv.data.model.SearchResponse
+=======
+import com.omd.pasolinisdv.data.remote.model.Owner
+import com.omd.pasolinisdv.data.remote.model.Repo
+import com.omd.pasolinisdv.data.remote.model.SearchResponse
+>>>>>>> 88da69ebb9a290bac1864bff5656fffe530a31a2
 import io.github.plastix.rxschedulerrule.RxSchedulerRule
 import io.reactivex.Completable
 import io.reactivex.Single

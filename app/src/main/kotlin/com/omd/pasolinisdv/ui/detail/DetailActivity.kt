@@ -5,7 +5,6 @@ import android.content.Intent
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import com.omd.pasolinisdv.ApplicationComponent
-import com.omd.pasolinisdv.R
 import com.omd.pasolinisdv.data.model.Section
 import com.omd.pasolinisdv.databinding.ActivityDetailBinding
 import com.omd.pasolinisdv.extensions.enableToolbarBackButton
