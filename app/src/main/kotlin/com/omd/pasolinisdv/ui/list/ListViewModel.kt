@@ -2,9 +2,8 @@ package com.omd.pasolinisdv.ui.list
 
 import com.omd.pasolinisdv.data.network.NetworkInteractor
 import com.omd.pasolinisdv.data.remote.ApiConstants
-import com.omd.pasolinisdv.data.remote.GithubApiService
-import com.omd.pasolinisdv.data.remote.model.Repo
-import com.omd.pasolinisdv.data.remote.model.SearchResponse
+import com.omd.pasolinisdv.data.model.Repo
+import com.omd.pasolinisdv.data.model.SearchResponse
 import com.omd.pasolinisdv.ui.base.RxViewModel
 import io.github.plastix.rxdelay.RxDelay
 import io.reactivex.Observable
@@ -22,14 +21,14 @@ class ListViewModel @Inject constructor(private val apiService: GithubApiService
 
     private var networkRequest: Disposable = Disposables.disposed()
 
-    private var repos: BehaviorSubject<List<Repo>> = BehaviorSubject.createDefault(emptyList())
+    private var sections: BehaviorSubject<List<Repo>> = BehaviorSubject.createDefault(emptyList())
     private var loadingState: BehaviorSubject<Boolean> = BehaviorSubject.createDefault(false)
     private val fetchErrors: PublishSubject<Throwable> = PublishSubject.create()
     private val networkErrors: PublishSubject<Throwable> = PublishSubject.create()
 
     fun fetchRepos() {
         networkRequest = networkInteractor.hasNetworkConnectionCompletable()
-                .andThen(apiService.repoSearch(ApiConstants.SEARCH_QUERY_KOTLIN,
+                .andThen(apiService.sectionSearch(ApiConstants.SEARCH_QUERY_KOTLIN,
                         ApiConstants.SEARCH_SORT_STARS,
                         ApiConstants.SEARCH_ORDER_DESCENDING))
                 .subscribeOn(Schedulers.io())
@@ -52,14 +51,14 @@ class ListViewModel @Inject constructor(private val apiService: GithubApiService
                     }
 
                     override fun onSuccess(value: SearchResponse) {
-                        repos.onNext(value.repos)
+                        sections.onNext(value.sections)
                     }
                 })
 
         addDisposable(networkRequest)
     }
 
-    fun getRepos(): Observable<List<Repo>> = repos.hide()
+    fun getRepos(): Observable<List<Repo>> = sections.hide()
 
     fun fetchErrors(): Observable<Throwable> = fetchErrors.hide()
 

@@ -8,7 +8,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.omd.pasolinisdv.ApplicationComponent
 import com.omd.pasolinisdv.R
-import com.omd.pasolinisdv.data.remote.model.Repo
+import com.omd.pasolinisdv.data.model.Repo
 import com.omd.pasolinisdv.databinding.ActivityListBinding
 import com.omd.pasolinisdv.extensions.hide
 import com.omd.pasolinisdv.extensions.show
@@ -93,12 +93,12 @@ class ListActivity : ViewModelActivity<ListViewModel, ActivityListBinding>() {
         return true
     }
 
-    private fun onItemClick(repo: Repo) {
-        startActivity(DetailActivity.newIntent(this, repo))
+    private fun onItemClick(section: Repo) {
+        startActivity(DetailActivity.newIntent(this, section))
     }
 
-    private fun updateList(repos: List<Repo>) {
-        adapter.updateRepos(repos)
+    private fun updateList(sections: List<Repo>) {
+        adapter.updateRepos(sections)
         updateEmptyView()
     }
 

@@ -1,19 +1,17 @@
 package com.omd.pasolinisdv.ui.detail
 
-import com.omd.pasolinisdv.data.remote.model.Repo
+import com.omd.pasolinisdv.data.model.Section
 import com.omd.pasolinisdv.ui.base.AbstractViewModel
 import javax.inject.Inject
 
-class DetailViewModel @Inject constructor(val repo: Repo) : AbstractViewModel() {
+class DetailViewModel @Inject constructor(val section: Section) : AbstractViewModel() {
 
-    fun getName() = repo.fullName
+    fun getTitle() = section.title
 
-    fun getDescription() = repo.description
+    fun getContent() = section.content
 
-    fun getStars() = repo.stars.toString()
+    fun getImagesIDsArray() = section.images
 
-    fun getForks() = repo.forks.toString()
-
-    fun getAvatarURL() = repo.owner.avatarUrl
+    fun getVideoURL() = section.videoURL
 
 }

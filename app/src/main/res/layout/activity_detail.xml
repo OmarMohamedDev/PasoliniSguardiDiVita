@@ -78,7 +78,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:contentDescription="@string/repo_star_icon_content_description"
+                    android:contentDescription="@string/section_star_icon_content_description"
                     android:tint="@color/gray"
                     app:srcCompat="@drawable/ic_star_24dp_black"/>
 
@@ -99,9 +99,9 @@
                     android:layout_height="20dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp"
-                    android:contentDescription="@string/repo_fork_icon_content_description"
+                    android:contentDescription="@string/section_fork_icon_content_description"
                     android:tint="@color/gray"
-                    app:srcCompat="@drawable/ic_repo_fork_10dp_black"/>
+                    app:srcCompat="@drawable/ic_section_fork_10dp_black"/>
 
                 <TextView
                     android:id="@+id/detailForkCount"

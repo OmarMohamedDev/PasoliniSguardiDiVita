@@ -1,4 +1,4 @@
-package com.omd.pasolinisdv.data.remote.model
+package com.omd.pasolinisdv.data.model
 
 import android.os.Parcel
 import android.os.Parcelable

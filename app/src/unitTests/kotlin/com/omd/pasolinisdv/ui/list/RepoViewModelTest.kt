@@ -1,7 +1,7 @@
 package com.omd.pasolinisdv.ui.list
 
-import com.omd.pasolinisdv.data.remote.model.Owner
-import com.omd.pasolinisdv.data.remote.model.Repo
+import com.omd.pasolinisdv.data.model.Owner
+import com.omd.pasolinisdv.data.model.Repo
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
@@ -10,7 +10,7 @@ class RepoViewModelTest {
 
 
     lateinit var owner: Owner
-    lateinit var repo: Repo
+    lateinit var section: Repo
     lateinit var viewModel: RepoViewModel
 
     @Before
@@ -18,25 +18,25 @@ class RepoViewModelTest {
         owner = Owner("Author",
                 "someURL")
 
-        repo = Repo("Name",
+        section = Repo("Name",
                 "Author/Name",
                 owner,
-                "Some random repo",
+                "Some random section",
                 50,
                 100)
 
-        viewModel = RepoViewModel(repo)
+        viewModel = RepoViewModel(section)
         viewModel.bind()
     }
 
     @Test
     fun getName_returnsCorrectName() {
-        Assert.assertEquals(viewModel.getName(), repo.fullName)
+        Assert.assertEquals(viewModel.getName(), section.fullName)
     }
 
     @Test
     fun getDescription_returnsCorrectDescription() {
-        Assert.assertEquals(viewModel.getDescription(), repo.description)
+        Assert.assertEquals(viewModel.getDescription(), section.description)
     }
 
     @Test

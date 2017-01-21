@@ -1,7 +1,7 @@
 package com.omd.pasolinisdv.ui.list
 
 import android.support.v7.util.DiffUtil
-import com.omd.pasolinisdv.data.remote.model.Repo
+import com.omd.pasolinisdv.data.model.Repo
 
 class RepoDiffCallback(private val old: List<Repo>, private val new: List<Repo>) : DiffUtil.Callback() {
 

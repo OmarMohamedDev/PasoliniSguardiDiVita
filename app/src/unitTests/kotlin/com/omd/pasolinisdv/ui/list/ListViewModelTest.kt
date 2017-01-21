@@ -1,10 +1,9 @@
 package com.omd.pasolinisdv.ui.list
 
 import com.omd.pasolinisdv.data.network.NetworkInteractor
-import com.omd.pasolinisdv.data.remote.GithubApiService
-import com.omd.pasolinisdv.data.remote.model.Owner
-import com.omd.pasolinisdv.data.remote.model.Repo
-import com.omd.pasolinisdv.data.remote.model.SearchResponse
+import com.omd.pasolinisdv.data.model.Owner
+import com.omd.pasolinisdv.data.model.Repo
+import com.omd.pasolinisdv.data.model.SearchResponse
 import io.github.plastix.rxschedulerrule.RxSchedulerRule
 import io.reactivex.Completable
 import io.reactivex.Single
@@ -61,14 +60,14 @@ class ListViewModelTest {
         Mockito.`when`(networkInteractor.hasNetworkConnectionCompletable())
                 .thenReturn(Completable.complete())
 
-        val repos: List<Repo> = listOf(mockRepo(), mockRepo())
-        val response: SearchResponse = SearchResponse(0, repos)
-        Mockito.`when`(apiService.repoSearch(Mockito.anyString(), Mockito.anyString(), Mockito.anyString()))
+        val sections: List<Repo> = listOf(mockRepo(), mockRepo())
+        val response: SearchResponse = SearchResponse(0, sections)
+        Mockito.`when`(apiService.sectionSearch(Mockito.anyString(), Mockito.anyString(), Mockito.anyString()))
                 .thenReturn(Single.just(response))
 
         viewModel.fetchRepos()
 
-        viewModel.getRepos().test().assertValue(repos)
+        viewModel.getRepos().test().assertValue(sections)
         viewModel.loadingState().test().assertValue(false)
     }
 
@@ -81,7 +80,7 @@ class ListViewModelTest {
                 )
 
         val response: SearchResponse = SearchResponse(0, listOf(mockRepo()))
-        Mockito.`when`(apiService.repoSearch(Mockito.anyString(), Mockito.anyString(), Mockito.anyString()))
+        Mockito.`when`(apiService.sectionSearch(Mockito.anyString(), Mockito.anyString(), Mockito.anyString()))
                 .thenReturn(Single.just(response))
         val networkObserver = viewModel.networkErrors().test()
 
@@ -97,7 +96,7 @@ class ListViewModelTest {
                 .thenReturn(Completable.complete())
 
         val error = Throwable("Error")
-        Mockito.`when`(apiService.repoSearch(Mockito.anyString(), Mockito.anyString(), Mockito.anyString()))
+        Mockito.`when`(apiService.sectionSearch(Mockito.anyString(), Mockito.anyString(), Mockito.anyString()))
                 .thenReturn(Single.error(error))
         val fetchObserver = viewModel.fetchErrors().test()
 
