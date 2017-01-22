@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+    android:id="@+id/action_rome"
+    android:enabled="true"
+    android:icon="@drawable/ic_rome"
+    android:title="@string/text_rome"
+    app:showAsAction="ifRoom" />
+  <item
+    android:id="@+id/action_monteverde"
+    android:enabled="true"
+    android:icon="@drawable/ic_monteverde"
+    android:title="@string/text_monteverde"
+    app:showAsAction="ifRoom" />
+  <item
+    android:id="@+id/action_tour"
+    android:enabled="true"
+    android:icon="@drawable/ic_tour"
+    android:title="@string/text_tour"
+    app:showAsAction="ifRoom" />
+  <item
+    android:id="@+id/action_augmented_reality"
+    android:enabled="true"
+    android:icon="@drawable/ic_augmented_reality"
+    android:title="@string/text_augmented_reality"
+    app:showAsAction="ifRoom" />
+</menu>

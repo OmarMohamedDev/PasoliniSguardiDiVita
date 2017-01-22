@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">Pasolini</string>
-    <string name="app_long_name">Pasolini, Sguardi di Vita</string>
+    <string name="app_name" translatable="false">Pasolini</string>
+    <string name="app_long_name" translatable="false">Pasolini, Sguardi di Vita</string>
+    <string name="text_monteverde" translatable="false">Monteverde</string>
+    <string name="text_rome">Rome</string>
+    <string name="text_tour">Tour</string>
+    <string name="text_augmented_reality">Augmented Reality</string>
 </resources>

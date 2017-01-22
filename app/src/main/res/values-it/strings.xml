@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Pasolini</string>
+  <string name="text_augmented_reality">Realtà Aumentata</string>
+  <string name="text_monteverde"></string>
+  <string name="text_rome">Roma</string>
+  <string name="text_tour">Tour</string>
+</resources>
