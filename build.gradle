@@ -2,7 +2,7 @@
 
 buildscript {
     ext.kotlin_version = '1.0.6'
-    ext.android_plugin_version = "2.2.3"
+    ext.android_plugin_version = "2.3.0-beta3"
 
     repositories {
         jcenter()
@@ -29,7 +29,7 @@ task clean(type: Delete) {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.14.1'
+    gradleVersion = '3.3'
 }
 
 // Disable incremental builds on the build server

@@ -1,5 +1,6 @@
 package com.omd.pasolinisdv.extensions
 
+import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 
 /**
@@ -8,4 +9,8 @@ import android.support.v7.app.AppCompatActivity
  */
 fun AppCompatActivity.enableToolbarBackButton() {
     delegate.supportActionBar?.setDisplayHomeAsUpEnabled(true)
+}
+
+fun BottomNavigationView.OnNavigationItemSelectedListener() {
+    
 }

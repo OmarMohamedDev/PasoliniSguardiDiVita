@@ -5,7 +5,7 @@ apply plugin: 'kotlin-kapt' // Use experimental kapt implementation
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "24.0.3"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.omd.pasolinisdv"
@@ -77,11 +77,11 @@ android {
 }
 
 
-// Use for legacy kapt implementation
-// Required for annotation processing plugins like Dagger
-// kapt {
-//    generateStubs = true
-//}
+ // Use for legacy kapt implementation
+ //Required for annotation processing plugins like Dagger
+kapt {
+    generateStubs = true
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
