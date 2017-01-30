@@ -8,7 +8,6 @@ import com.omd.pasolinisdv.ApplicationComponent
 import com.omd.pasolinisdv.R
 import com.omd.pasolinisdv.data.model.Section
 import com.omd.pasolinisdv.databinding.ActivitySectionBinding
-import com.omd.pasolinisdv.extensions.enableToolbarBackButton
 import com.omd.pasolinisdv.ui.base.ViewModelActivity
 
 open class SectionActivity : ViewModelActivity<SectionViewModel, ActivitySectionBinding>() {
@@ -26,15 +25,19 @@ open class SectionActivity : ViewModelActivity<SectionViewModel, ActivitySection
     private lateinit var section: Section
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+            intent = newIntent(this, Section(getString(R.string.pasolini_roma_title),
+                    getString(R.string.pasolini_roma_content),
+                    intArrayOf(1,2,3),
+                    "videourl"))
+
+
         // We need to inject our Book into the Dagger graph
         // Thus we need grab it from the intent before we inject dependencies in super.onCreate()
-        //TODO: Pass the correct value to initialize the section
-        section = Section("Pasolini e Roma", "Testo", intArrayOf(1,2,3), "videourl")//intent.getParcelableExtra(EXTRA_SECTION_OBJECT)
+        section = intent.getParcelableExtra(EXTRA_SECTION_OBJECT)
 
         super.onCreate(savedInstanceState)
         setSupportActionBar(binding.detailToolbar)
-        //TODO: Replace this call with one that add the menu drawer
-        //enableToolbarBackButton()
     }
 
     override fun onBind() {

@@ -1,8 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">Pasolini</string>
   <string name="text_augmented_reality">Realtà Aumentata</string>
-  <string name="text_monteverde"></string>
   <string name="text_rome">Roma</string>
   <string name="text_tour">Tour</string>
+  <string name="pasolini_roma_title">Pasolini e Roma</string>
+  <string name="pasolini_monteverde_title">Pasolini e Monteverde</string>
+  <string name="pasolini_roma_content">"Pier Paolo Pasolini nel 1949 si trasferì a Roma,
+    stabilendosi dapprima in una borgata, vivendo di lezioni private e dell'insegnamento in una
+    scuola privata. La scoperta del mondo del sottoproletariato romano gli ispirò - oltre ad alcuni
+    dei versi contenuti nelle Ceneri di Gramsci (1957) e nella Religione del mio tempo (1961), che
+    seguivano quelli dell'Usignuolo della Chiesa cattolica (ma degli anni 1943-1949, e cioè
+    anteriori alle Ceneri) - soprattutto i romanzi Ragazzi di vita (1955) e Una vita violenta
+    (1959), che fecero scandalo, ma lo avviarono al successo letterario. Con gli antichi compagni
+    d'università Leonetti e Roversi, fondò e diresse dal 1955 al 1959 la rivista «Officina», che
+    vide fra i collaboratori Fortini, Volponi e altri importanti critici e letterati militanti.
+    Cominciava intanto la sua attività nell'ambito del mondo cinematografico: collaborò ad alcune
+    sceneggiature (anche per Le notti di Cabiria di Fellini), quindi a partire dal 1961 diresse
+    numerosissimi film, da Accattone a Uccellacci e uccellini, da Edipo re a Teorema, da Medea al
+    Decameron. Molti di questi film fecero scandalo, come i romanzi, e in qualche caso costarono a
+    Pasolini processi e condanne. Negli anni Sessanta pubblicò ll sogno di una cosa (un romanzo
+    scritto nel 1949), scrisse alcune tragedie, altri versi (Poesia in forma di rosa, 1964;
+    Trasumanar e organizzar, 1971) e svolse un'intensa attività di critico militante su vari
+    giornali e riviste (fra l'altro diresse con Moravia e Carocci «Nuovi Argomenti»), attività che,
+    dopo la raccolta Passione e ideologia (1960), sfociò in numerosi volumi, in parte usciti
+    postumi: da Empirismo eretico (1972) e Scritti corsari (1975) a Descrizioni di descrizioni
+    (1979). Morì assassinato a Ostia in circostanze oscure nel 1975. "</string>
+  <string name="pasolini_monteverde_content">"Pier Paolo Pasolini, si trasferì nel 1954 a
+    Roma nel quartiere di Monteverde. Il sodalizio tra Pasolini e la cosiddetta zona di Donna
+    Olimpia è di quelli destinati a non dissolversi più. Ne sono testimonianza alcuni versi,
+    ma soprattutto il romanzo Ragazzi di vita, primo grande successo del poeta,
+    pubblicato nel 1955. Nei primi due capitoli del romanzo (il Ferrobedò, il Riccetto) continui
+    sono i riferimenti a visioni e paesaggi di Monteverde. Emblematico  il rapporto instauratosi
+    tra Pasolini, il quartiere e la sua gente. Rapporto che è continuato nel tempo. Tempo che ha
+    determinato cambiamenti epocali nella città, trasformata da uno sviluppo urbano spesso
+    selvaggio, e nelle persone, che con il benessere economico sono andate lentamente perdendo la
+    loro genuinità e spontaneità, facendo acquisire al sottoproletariato, secondo Pasolini,
+    la grettezza del piccolo borghese. "</string>
 </resources>

@@ -5,4 +5,40 @@
     <string name="text_rome">Rome</string>
     <string name="text_tour">Tour</string>
     <string name="text_augmented_reality">Augmented Reality</string>
+
+    <!-- Static content -->
+    <string name="pasolini_roma_title">Pasolini and Rome</string>
+    <string name="pasolini_roma_content">"Pier Paolo Pasolini in 1949 he moved to Rome, settling
+        first in a township, living on private lessons and teaching in a private school. The
+        discovery of the world of the Roman underclass inspired him - as well as some of the verses
+        contained in the Ashes of Gramsci (1957) and in the religion of my time (1961), which
+        followed those of the nightingale of the Catholic Church (but the years 1943 to 1949, ie
+        prior to the Ashes) - especially the novels Ragazzi di vita (1955) and a violent life
+        (1959), who made a scandal, but it started to literary success. With the old fellow
+        Leonetti and Roversi university, founded and directed from 1955 to 1959 the magazine
+        \"Workshop\", which saw among the collaborators Fortini, Volponi and other important
+        literary critics and activists. meanwhile He began his activity in one of the film world:
+        he collaborated with some screenplays (for nights of Cabiria Fellini), then from 1961 he
+        directed numerous films, from Tramp to Hawks and the Sparrows, from Oedipus king Theorem,
+        from Medea to the Decameron. Many of these films did scandal, like novels, and in some
+        cases cost him to Pasolini trials and convictions. In the sixties he published The dream
+        of a thing (a novel written in 1949), he wrote some tragedies, other verses (Poetry in the
+        form of pink, 1964; Trasumanar and organizzar, 1971) and made an intense militant critic
+        in various newspapers and magazines (among other things headed with Moravia and Carocci
+        \"New Topics\"), an activity that, after collection Passion and ideology (1960), resulted
+        in numerous books, some published posthumously: from heretical Empiricism (1972) and
+        Writings corsairs (1975) in the descriptions descriptions (1979). He died assassinated in
+        Ostia in obscure circumstances in 1975. "</string>
+    <string name="pasolini_monteverde_title">Pasolini and Monteverde</string>
+    <string name="pasolini_monteverde_content">Pier Paolo Pasolini, he moved in 1954 in Rome, in
+        the Monteverde district. The partnership between Pasolini and the so-called Donna Olimpia
+        is those intended to not dissolve anymore. This is witnessed in some ways, but especially
+        the novel Ragazzi di vita, the first great success of the poet, published in 1955. In the
+        first two chapters of the novel (the Ferrobedò, Riccetto) are continuous references to
+        visions and landscapes of Monteverde. Emblematic of the relationship established between
+        Pasolini, the neighborhood and its people. Relationship that has continued over time. Time
+        which resulted in dramatic changes in the city, transformed by urban development often
+        wild, and in the people, that with the economic well-being went slowly losing their
+        authenticity and spontaneity, by acquiring the underclass, according to Pasolini, the
+        narrow-mindedness of the petty bourgeois.</string>
 </resources>
