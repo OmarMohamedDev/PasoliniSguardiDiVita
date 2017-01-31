@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -8,64 +11,82 @@
             type="com.omd.pasolinisdv.ui.section.SectionViewModel"/>
     </data>
 
-    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                     xmlns:tools="http://schemas.android.com/tools"
-                                                     android:layout_width="match_parent"
-                                                     android:layout_height="match_parent"
-                                                     android:fitsSystemWindows="true"
-                                                     tools:context=".ui.section.SectionActivity">
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.section.SectionActivity">
 
-        <android.support.design.widget.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/AppTheme.AppBarOverlay">
+    <android.support.v7.widget.Toolbar
+      android:id="@+id/detailToolbar"
+      android:layout_width="0dp"
+      android:layout_height="56dp"
+      android:layout_marginTop="0dp"
+      android:background="?attr/colorPrimary"
+      android:elevation="14dp"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:popupTheme="@style/AppTheme.PopupOverlay"
+      tools:layout_constraintLeft_creator="1"
+      tools:layout_constraintRight_creator="1"
+      tools:layout_constraintTop_creator="1"/>
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/detailToolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
-        </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.BottomNavigationView
+      android:id="@+id/bottom_navigation"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:elevation="14dp"
+      app:itemBackground="@color/colorPrimary"
+      app:itemIconTint="@drawable/nav_item_color_state"
+      app:itemTextColor="@drawable/nav_item_color_state"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:menu="@menu/bottom_navigation_main"
+      tools:layout_constraintBottom_creator="1"
+      tools:layout_constraintLeft_creator="1"
+      tools:layout_constraintRight_creator="1"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingBottom="16dp"
-            android:paddingEnd="16dp"
-            android:paddingStart="16dp"
-            android:paddingTop="32dp"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <ScrollView
+      android:id="@+id/contentScrollView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="0dp"
+      android:layout_marginBottom="0dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      android:clipToPadding="true"
+      android:fillViewport="false"
+      app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/detailToolbar"
+      app:layout_constraintVertical_bias="0.0">
 
-            <ScrollView
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+      <TextView
+        android:id="@+id/contentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center_horizontal"
+        android:text="@{viewModel.content}"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailToolbar"
+        app:layout_constraintVertical_bias="0.23000002"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"/>
+    </ScrollView>
 
-                <TextView
-                    android:id="@+id/content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:gravity="center_horizontal"
-                    android:text="@{viewModel.content}"
-                    android:textSize="24sp"/>
-            </ScrollView>
-
-        </LinearLayout>
-
-        <android.support.design.widget.BottomNavigationView
-          android:id="@+id/bottom_navigation"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_gravity="bottom"
-          app:itemBackground="@color/colorPrimary"
-          app:itemIconTint="@drawable/nav_item_color_state"
-          app:itemTextColor="@drawable/nav_item_color_state"
-          app:menu="@menu/bottom_navigation_main" />
-
-    </android.support.design.widget.CoordinatorLayout>
+  </android.support.constraint.ConstraintLayout>
 
 </layout>
