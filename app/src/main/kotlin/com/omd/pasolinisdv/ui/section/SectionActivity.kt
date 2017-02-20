@@ -26,13 +26,6 @@ open class SectionActivity : ViewModelActivity<SectionViewModel, ActivitySection
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        /*//TODO: make it properly
-            intent = newIntent(this, Section(getString(R.string.pasolini_roma_title),
-                    getString(R.string.pasolini_roma_content),
-                    intArrayOf(1,2,3),
-                    "videourl"))*/
-
-
         // We need to inject our Book into the Dagger graph
         // Thus we need grab it from the intent before we inject dependencies in super.onCreate()
         section = intent.getParcelableExtra(EXTRA_SECTION_OBJECT)

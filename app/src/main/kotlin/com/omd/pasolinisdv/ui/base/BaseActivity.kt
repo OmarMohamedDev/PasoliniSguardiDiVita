@@ -41,10 +41,24 @@ abstract class BaseActivity: AppCompatActivity() {
                         videoUrl = "videoUrl"
                     }
                     R.id.action_tour -> {
-
+                        //TODO: change this properly
+                        titleId = R.string.pasolini_monteverde_title
+                        contentId = R.string.pasolini_monteverde_content
+                        imageIdArray = intArrayOf(1, 2, 3)
+                        videoUrl = "videoUrl"
                     }
                     R.id.action_augmented_reality -> {
-
+                        //TODO: change this properly
+                        titleId = R.string.pasolini_monteverde_title
+                        contentId = R.string.pasolini_monteverde_content
+                        imageIdArray = intArrayOf(1, 2, 3)
+                        videoUrl = "videoUrl"
+                    }
+                    else -> {
+                        titleId = R.string.pasolini_roma_title
+                        contentId = R.string.pasolini_roma_content
+                        imageIdArray = intArrayOf(1, 2, 3)
+                        videoUrl = "videoUrl"
                     }
                  }
 
@@ -52,8 +66,6 @@ abstract class BaseActivity: AppCompatActivity() {
                     getString(contentId),
                     imageIdArray,
                     videoUrl))
-
-
 
         }
     }
